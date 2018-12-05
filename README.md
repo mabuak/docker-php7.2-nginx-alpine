@@ -2,6 +2,8 @@
 
 Build on [Alpine Linux](http://www.alpinelinux.org/).
 
+You can put your code in src folder.
+
 Usage
 -----
 Start the Docker containers:
