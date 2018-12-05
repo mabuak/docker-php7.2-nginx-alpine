@@ -6,12 +6,6 @@ Usage
 -----
 Start the Docker containers:
 
-Build : 
-
-```
-docker build -t ramadhan/docker-php7.2-nginx-alpine:latest .
-```
-
 Run :
 
 ```
