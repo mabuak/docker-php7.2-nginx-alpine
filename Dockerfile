@@ -28,7 +28,7 @@ COPY config/upstream.conf /etc/nginx/upstream.conf
 COPY config/fpm-pool.conf /etc/php7/php-fpm.d/my_custom.conf
 
 # Configure supervisord
-COPY config/supervisord.conf /etc/supervisor/supervisord.conf
+COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Add application
 RUN mkdir -p /home/projects
@@ -36,4 +36,4 @@ VOLUME /home/projects
 WORKDIR /home/projects
 
 EXPOSE 80 443
-#CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
