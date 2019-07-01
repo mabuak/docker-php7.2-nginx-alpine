@@ -36,4 +36,4 @@ VOLUME /home/projects
 WORKDIR /home/projects
 
 EXPOSE 80 443
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+#CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
